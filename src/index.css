@@ -1,13 +1,58 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  padding: 5% 15%;
+}
+.poular_movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1rem;
+  row-gap: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.movie_card h2 {
+  font-size: 0.8rem;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  height: 3rem;
+  border-radius: 0.7rem 0.7rem 0 0;
+  border: 1px solid whitesmoke;
+  border-bottom: 0;
+}
+.movie_card img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border: 0.7rem;
+  border-radius: 0 0 0.7rem 0.7rem;
+  border: 1px solid whitesmoke;
+  border-top: 0;
+}
+.filter_container {
+  margin-bottom: 1.2rem;
+}
+.filter_container button {
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid teal;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: teal;
+}
+.filter_container button.active {
+  background: teal;
+  color: aliceblue;
+}
+.filter_container button:hover {
+  background: teal;
+  color: aliceblue;
+  cursor: pointer;
+  transition: background 500ms ease;
 }
