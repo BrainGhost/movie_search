@@ -1,12 +1,15 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Filter from "./Filter";
+import Header from "./Header";
 import MoviesCard from "./MoviesCard";
 
 function App() {
   const [dataMovies, setDataMovies] = useState([]);
   const [filterMovies, setfilterMovies] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
+  const [input, setInput] = useState("");
+  const [getSearch, setGetSearch] = useState(false);
 
   useEffect(() => {
     fetchMovies();
@@ -19,21 +22,41 @@ function App() {
     const movies = await data.json();
     setDataMovies(movies.results);
     setfilterMovies(movies.results);
-    console.log(movies.results);
   };
   return (
     <div className="app">
-      <Filter
-        dataMovies={dataMovies}
+      <Header
         setfilterMovies={setfilterMovies}
-        activeGenre={activeGenre}
-        setActiveGenre={setActiveGenre}
+        filterMovies={filterMovies}
+        dataMovies={dataMovies}
+        input={input}
+        setInput={setInput}
+        setGetSearch={setGetSearch}
       />
-      <motion.div layout className="poular_movies">
+      {!getSearch ? (
+        <Filter
+          dataMovies={dataMovies}
+          setfilterMovies={setfilterMovies}
+          activeGenre={activeGenre}
+          setActiveGenre={setActiveGenre}
+        />
+      ) : (
+        ""
+      )}
+      <motion.div layout className="popular_movies">
         <AnimatePresence>
-          {filterMovies.map((movie) => (
-            <MoviesCard key={movie.id} movie={movie} />
-          ))}
+          {filterMovies
+            .filter((item) => {
+              if (!input.trim()) {
+                return item;
+              }
+              if (item.title.toLowerCase().includes(input.toLowerCase())) {
+                return item;
+              }
+            })
+            .map((movie) => (
+              <MoviesCard key={movie.id} movie={movie} />
+            ))}
         </AnimatePresence>
       </motion.div>
     </div>
