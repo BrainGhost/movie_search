@@ -92,3 +92,22 @@
   background-color: teal;
   cursor: pointer;
 }
+.pagination_container {
+  width: 100%;
+  background-color: yellow;
+  /* padding-left: 40%; */
+  height: 2rem;
+}
+.containerClassName {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  height: 100%;
+  place-items: center;
+}
+.loading {
+  color: teal;
+  text-align: center;
+  font-size: 2rem;
+  margin: 30vh 0;
+}
