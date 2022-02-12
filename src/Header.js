@@ -13,19 +13,18 @@ const Header = ({
       setGetSearch(false);
       return;
     }
-
+    console.log("clicked");
     const searchFilterd = dataMovies.filter((item) => {
       if (item.title.toLowerCase().includes(input.toLowerCase())) {
         setGetSearch(true);
         return item;
       }
+      return false;
     });
-
     setfilterMovies(searchFilterd);
+    console.log(searchFilterd);
   };
-  if (!input.trim()) {
-    setGetSearch(false);
-  }
+
   return (
     <div className="header_container">
       <form className="search_container">

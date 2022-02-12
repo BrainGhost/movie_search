@@ -17,8 +17,8 @@ function App() {
   useEffect(() => {
     fetchMovies();
   }, []);
-  const apiKey = `${process.env.REACT_APP_APIKEY}`;
   const fetchMovies = async () => {
+    const apiKey = `${process.env.REACT_APP_APIKEY}`;
     setLoading(true);
     const data = await axios
       .get(
@@ -39,7 +39,6 @@ function App() {
     setDataMovies(movies.results);
     setfilterMovies(movies.results);
   };
-
   return (
     <div className="app">
       <Header
@@ -71,6 +70,7 @@ function App() {
                 if (item.title.toLowerCase().includes(input.toLowerCase())) {
                   return item;
                 }
+                return false;
               })
               .map((movie) => (
                 <MoviesCard key={movie.id} movie={movie} />
