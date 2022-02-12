@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# **Filamu_show**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This application uses The MovieDB API to display some popular shows, the app is intended to showcase my React js skills in getting data from the API using Axios and mapping it into components, as well as constructing a search bar for users to search across movies, The app is still in its early stages. I intend to continue adding features. i intend to continue adding feature.
+The app was inspired by Dev Ed, a brilliant youtuber and developer; I was able to add some of my own features, and I am planning to keep adding more features.
 
-## Available Scripts
 
-In the project directory, you can run:
+> It's a simple movies interface that I created to put my react skills to the test by getting data from an API and displaying them in components.
 
-### `npm start`
+[![](https://github.com/BrainGhost/movie_search/blob/main/public/filamu_image.jpg)](https://github.com/BrainGhost/movie_search/blob/main/public/filamu_image.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+------------
+[ **View DEMO**](https://filamu.netlify.app/ "# **View DEMO**")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+------------
 
-### `npm test`
+Fell free to check it out, and ***`Star⭐ the Project if you like it 💻`***
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies
+Here are some of the technology used:
+- [React JS](https://reactjs.org/ "React JS")
+- [Axios](https://axios-http.com/docs/intro "Axios") (to fetch data from the API)
+- [The MovieDB API](https://developers.themoviedb.org/ "MovieDB API")
 
-### `npm run build`
+This project was inspired by Dev Ed from youtube, but I have added some features on my own like such as:
+- Search capabilities(by filtering, or by click).
+_ intergrate Axios to fetch the data instead of the FETCH methods
+- Beautiful animation using Framer-motion.
+- 100% mobile responsive using Grid.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ⚓Features and Fuctionality
+- [x] user-friendly interface.
+- [x] Fetch movies from the DB.
+- [x] Search fonctionality.
+- [x] Mobile Responsive.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 💻Getting started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Requirements
+- [Node.js](http://nodejs.dev/learn/how-to-install-nodejs "Node.js")
+- [Yarn](https://yarnpkg.com/ "Yarn") or [npm](http://www.npmjs.com/ "npm")
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Clone this Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+$ git clone https://github.com/BrainGhost/movie_search.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+$ cd movie_search
+```
 
-## Learn More
+### Follow these steps
+```bash
+# Install the dependencies
+$ npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the web app
+$ npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future plans
+- Pagination.
+- Description page of a movie on click
+- mutliple pages from different categories.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
