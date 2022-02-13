@@ -27,6 +27,7 @@ const Header = ({
 
   return (
     <div className="header_container">
+      <div className="title">Filamu show</div>
       <form className="search_container">
         <input
           onChange={(e) => setInput(e.target.value)}
@@ -35,6 +36,11 @@ const Header = ({
         />
         <button onClick={handleClick}>Search</button>
       </form>
+      <nav className="nav_bar">
+        <a href="">Movies</a>
+        <a href="">Tv series</a>
+        <a href="">Contact</a>
+      </nav>
     </div>
   );
 };
