@@ -49,40 +49,41 @@ function App() {
         setInput={setInput}
         setGetSearch={setGetSearch}
       />
-      {!getSearch ? (
-        <Filter
-          dataMovies={dataMovies}
-          setfilterMovies={setfilterMovies}
-          activeGenre={activeGenre}
-          setActiveGenre={setActiveGenre}
-        />
-      ) : (
-        ""
-      )}
-      {!loading ? (
-        <motion.div layout className="popular_movies">
-          <AnimatePresence>
-            {filterMovies
-              .filter((item) => {
-                if (!input.trim()) {
-                  return item;
-                }
-                if (item.title.toLowerCase().includes(input.toLowerCase())) {
-                  return item;
-                }
-                return false;
-              })
-              .map((movie) => (
-                <MoviesCard key={movie.id} movie={movie} />
-              ))}
-          </AnimatePresence>
-        </motion.div>
-      ) : errorMessage ? (
-        errorMessage
-      ) : (
-        <h1 className="loading">Loading ...</h1>
-      )}
-      {/* <div className="pagination_container">
+      <div className="body_container">
+        {!getSearch ? (
+          <Filter
+            dataMovies={dataMovies}
+            setfilterMovies={setfilterMovies}
+            activeGenre={activeGenre}
+            setActiveGenre={setActiveGenre}
+          />
+        ) : (
+          ""
+        )}
+        {!loading ? (
+          <motion.div layout className="popular_movies">
+            <AnimatePresence>
+              {filterMovies
+                .filter((item) => {
+                  if (!input.trim()) {
+                    return item;
+                  }
+                  if (item.title.toLowerCase().includes(input.toLowerCase())) {
+                    return item;
+                  }
+                  return false;
+                })
+                .map((movie) => (
+                  <MoviesCard key={movie.id} movie={movie} />
+                ))}
+            </AnimatePresence>
+          </motion.div>
+        ) : errorMessage ? (
+          errorMessage
+        ) : (
+          <h1 className="loading">Loading ...</h1>
+        )}
+        {/* <div className="pagination_container">
         <ReactPaginate
           previousLabel={"<<"}
           nextLabel={">>"}
@@ -91,6 +92,7 @@ function App() {
           containerClassName="containerClassName"
         />
       </div> */}
+      </div>
     </div>
   );
 }
