@@ -43,7 +43,6 @@ function App() {
     <div className="app">
       <Header
         setfilterMovies={setfilterMovies}
-        filterMovies={filterMovies}
         dataMovies={dataMovies}
         input={input}
         setInput={setInput}

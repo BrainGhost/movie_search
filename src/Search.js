@@ -1,6 +1,12 @@
 import React from "react";
 
-const Search = (dataMovies, setfilterMovies, input, setInput, setGetSearch) => {
+const Search = ({
+  setfilterMovies,
+  dataMovies,
+  input,
+  setInput,
+  setGetSearch,
+}) => {
   const handleClick = (e) => {
     e.preventDefault();
     if (!input.trim()) {

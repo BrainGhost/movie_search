@@ -26,7 +26,7 @@ a {
 
 nav.nav_bar a {
   color: rgba(0, 128, 128, 0.7);
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   margin: 0 15px;
 }
@@ -50,6 +50,7 @@ nav.nav_bar a:hover {
   border: none;
   color: teal;
   outline: none;
+  text-transform: uppercase;
 }
 .search_container button {
   background-color: rgba(0, 128, 128, 0.788);

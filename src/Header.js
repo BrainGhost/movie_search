@@ -1,17 +1,29 @@
 import React from "react";
 import Search from "./Search";
 
-const Header = () => {
+const Header = ({
+  setfilterMovies,
+  dataMovies,
+  input,
+  setInput,
+  setGetSearch,
+}) => {
   return (
     <div className="header_container">
       <div className="title">
-        <a>Filamu show</a>
+        <a href="/">Filamu show</a>
       </div>
-      <Search />
+      <Search
+        setfilterMovies={setfilterMovies}
+        dataMovies={dataMovies}
+        input={input}
+        setInput={setInput}
+        setGetSearch={setGetSearch}
+      />
       <nav className="nav_bar">
+        <a href="/">Home</a>
         <a href="/">Movies</a>
         <a href="/">Tv-series</a>
-        <a href="/">Contact</a>
       </nav>
     </div>
   );
