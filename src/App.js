@@ -20,7 +20,6 @@ function App() {
     const data = await axios
       .get(
         `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
-        // `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`
       )
 
       .catch((error) => {
