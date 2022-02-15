@@ -6,7 +6,7 @@ The app was inspired by Dev Ed, a brilliant youtuber and developer; I was able t
 
 > It's a simple movies interface that I created to put my react skills to the test by getting data from an API and displaying them in components.
 
-[![](https://github.com/BrainGhost/movie_search/blob/main/public/filamu_image.jpg)](https://github.com/BrainGhost/movie_search/blob/main/public/filamu_image.jpg)
+[![](https://github.com/BrainGhost/movie_search/blob/main/src/images/filamu_image_v2.jpg)](https://github.com/BrainGhost/movie_search/blob/main/src/images/filamu_image_v2.jpg)
 
 ------------
 [ **View DEMO**](https://filamu.netlify.app/ "# **View DEMO**")
