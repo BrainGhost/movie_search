@@ -5,7 +5,9 @@ const TvShow = () => {
   return (
     <div>
       <Header />
-      TvShow
+      <div className="page_content">
+        <h1>Tv Shows</h1>
+      </div>
     </div>
   );
 };

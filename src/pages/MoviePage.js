@@ -5,7 +5,9 @@ const MoviePage = () => {
   return (
     <div>
       <Header />
-      MoviePage
+      <div className="page_content">
+        <h1>Movies</h1>
+      </div>
     </div>
   );
 };
