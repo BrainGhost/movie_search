@@ -17,9 +17,9 @@ Fell free to check it out, and ***`Star⭐ the Project if you like it 💻`***
 
 ### Technologies
 Here are some of the technology used:
-- [React JS](https://reactjs.org/ "React JS")
-- [Axios](https://axios-http.com/docs/intro "Axios") (to fetch data from the API)
-- [The MovieDB API](https://developers.themoviedb.org/ "MovieDB API")
+- [React JS](https://reactjs.org/ "React JS").
+- [Axios](https://axios-http.com/docs/intro "Axios") (to fetch data from the API).
+- [The MovieDB API](https://developers.themoviedb.org/ "MovieDB API").
 
 This project was inspired by Dev Ed from youtube, but I have added some features on my own like such as:
 - Search capabilities(by filtering, or by click).
